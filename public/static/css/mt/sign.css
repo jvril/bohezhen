@@ -1,0 +1,7 @@
+/*login.css*/
+.site-icon{width:115px;height:41px;background-image: url('../../static/images/bhz-icon.png');}
+.sign-l p{padding-left:5px;margin-top:7px;}
+.sign-l div.sign-lp{padding-left:74px;}
+.sign-l div.sign-lp div.slp-hight{border-right: 1px solid #eee;height:442px; }
+div.sign-lp div.slp-hight div{padding-top:160px;}
+.sign-l{width:50%;}

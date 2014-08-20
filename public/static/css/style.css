@@ -1,0 +1,93 @@
+/*! bohezhen - v0.0.1 2014-08-20 */
+
+body{
+    font-size:12px;
+    font-family: Verdana, "宋体", sans-serif;
+    color: #333;
+    background-color: #ffffff;
+}
+a{color:#333;}
+a:hover{color:#de4822;}
+.indent-x{text-indent: -9999px;}
+.fl{float:left;display: inline;}
+.fr{float:right;display:inline;}
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+.block{display:block;}
+.cor-1{color:#959595;}
+.cor-2{color:#de4822;}
+.cor-3{color:#121212;}
+.cor-4{color:#f0971b;}
+.bg-1{background-color:#121212;}
+.bg-2{background-color:#f0971b;}
+.bg-3{background-color:#36e1a5;}
+.bg-4{background-color:#6387e4;}
+.fs-14{font-size:14px;}
+.p-1{color:#DDD;}
+html, body, #content {height: 100%;}
+#content{width:1000px;margin:0 auto;height: auto; min-height: 100%;}
+#content .panel{padding-bottom: 78px;}
+#footer {
+    position: relative;
+    margin-top: -78px; /* footer高度的负值 */
+    height: 78px;
+    clear:both;
+    text-align: center;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before,blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+/* remember to define focus styles! */
+:focus {
+    outline: 0;}
+/* remember to highlight inserts somehow! */
+ins {
+    text-decoration: none;
+}
+del {
+    text-decoration: line-through;
+}
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+.site-icon{width:115px;height:41px;background-image: url('../../static/images/bhz-icon.png');}
+.sign-l p{padding-left:5px;margin-top:7px;}
+.sign-l div.sign-lp{padding-left:74px;}
+.sign-l div.sign-lp div.slp-hight{border-right: 1px solid #eee;height:442px; }
+div.sign-lp div.slp-hight div{padding-top:160px;}
+.sign-l{width:50%;}
