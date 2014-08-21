@@ -1,0 +1,26 @@
+{
+  "name": "bohezhen",
+  "version": "0.0.1",
+  "keywords":["bower","bohezhen"],
+  "description": "to be a literature youth",
+  "main": "main.js",
+  "authors": [
+    "jvril"
+  ],
+  "license": "MIT",
+  "homepage": "http://www.bohezhen.com",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+    "dependencies": {
+        "underscore": "~1.6.0",
+        "jquery": "~2.1.1",
+        "requirejs": "~2.1.14",
+        "text":"~2.0.12"
+    }
+}

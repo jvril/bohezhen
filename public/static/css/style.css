@@ -1,4 +1,4 @@
-/*! bohezhen - v0.0.1 2014-08-20 */
+/*! bohezhen - v0.0.1 2014-08-21 */
 
 body{
     font-size:12px;
@@ -6,8 +6,8 @@ body{
     color: #333;
     background-color: #ffffff;
 }
+body #content{font-size:14px;}
 a{color:#333;}
-a:hover{color:#de4822;}
 .indent-x{text-indent: -9999px;}
 .fl{float:left;display: inline;}
 .fr{float:right;display:inline;}
@@ -23,11 +23,28 @@ a:hover{color:#de4822;}
 .cor-2{color:#de4822;}
 .cor-3{color:#121212;}
 .cor-4{color:#f0971b;}
+.cor-5{color:#333333;}
+.cor-6{color:#36e1a5;}
 .bg-1{background-color:#121212;}
 .bg-2{background-color:#f0971b;}
 .bg-3{background-color:#36e1a5;}
 .bg-4{background-color:#6387e4;}
+.t-1{font-size:28px;}
 .fs-14{font-size:14px;}
+.fs-13{font-size:13px;}
+.fs-12{font-size:12px;}
+.ml-55{margin-left:55px;}
+.ml-10{margin-left:10px;}
+.ml-5{margin-left:5px;}
+.mt-50{margin-top:50px;}
+.mt-25{margin-top:25px;}
+.mt-35{margin-top:35px;}
+.mt-40{margin-top:40px;}
+.mt-60{margin-top:60px;}
+.w-300{width:300px;}
+.btn{text-decoration: none;text-align: center;font-size:14px;}
+.btn-1{color:#ffffff;padding: 12px 0px;}
+.a-link{border-radius: 5px;}
 .p-1{color:#DDD;}
 html, body, #content {height: 100%;}
 #content{width:1000px;margin:0 auto;height: auto; min-height: 100%;}
@@ -90,4 +107,8 @@ table {
 .sign-l div.sign-lp{padding-left:74px;}
 .sign-l div.sign-lp div.slp-hight{border-right: 1px solid #eee;height:442px; }
 div.sign-lp div.slp-hight div{padding-top:160px;}
-.sign-l{width:50%;}
+.sign-l,.sign-r{width:50%;}
+.sign-pass-icon{background:url(../../static/images/icons.png?20142224) no-repeat -40px -6px;width:22px;height:22px;}
+.sign-mail-icon{background:url(../../static/images/icons.png?20142224) no-repeat -64px -6px;width:22px;height:22px;}
+.sign-tap{border-bottom:1px solid #eee;height:36px;width:300px;}
+.sign-tap input{width:260px;margin-left:10px;font-size:16px;border:none;}

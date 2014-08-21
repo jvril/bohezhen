@@ -1,6 +1,19 @@
 module.exports = function(grunt){
     grunt.initConfig({
         pkg : grunt.file.readJSON('package.json'),
+        bower: {
+            install: {
+                options: {
+                    targetDir: './public/static/js/lib',
+                    layout: 'byComponent',
+                    install: true,
+                    verbose: false,
+                    cleanTargetDir: false,
+                    cleanBowerDir: false,
+                    bowerOptions: {}
+                }
+            }
+        },
         concat:{
             options:{
                 stripBanners :true,
@@ -19,7 +32,7 @@ module.exports = function(grunt){
             },
             app_task:{
                 files:{
-                    'public/static/js/web.min.js':['public/static/js/lib/*.js','public/static/js/mt/*.js']
+                    'public/static/js/web.min.js':['public/static/js/lib/**/*.js','public/static/js/mt/*.js']
                 }
             }
         },
@@ -36,8 +49,36 @@ module.exports = function(grunt){
         }
     });
 
+    grunt.loadNpmTasks('grunt-contrib-requirejs');
+    grunt.registerTask('build', 'require demo', function (channel, project, branch) {
+
+        var path = './public/static/js';
+        grunt.log.debug('path: ' + path);
+
+        //第一步，读取配置信息
+        var cfg = grunt.file.readJSON('./gruntCfg.json');
+        cfg = cfg.requirejs;
+
+        grunt.config.set('config', {
+            srcDir: path+'/lib/',
+            destDir: path
+        });
+
+
+        grunt.config.set('requirejs', { main: cfg });
+
+        //第二步，设置参数
+        grunt.log.debug('param: ' + JSON.stringify(grunt.config()));
+
+        //第三步跑任务
+        grunt.task.run(['requirejs']);
+
+    });
+
     grunt.loadNpmTasks('grunt-contrib-concat');
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-watch');
-    grunt.registerTask('default', ['concat', 'uglify']);
+    grunt.loadNpmTasks('grunt-bower-task');
+
+    grunt.registerTask('default', ['concat', 'uglify','bower','build']);
 }

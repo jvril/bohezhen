@@ -1,7 +1,7 @@
 <div id="content">
     <div class="panel ohide">
         <div class="mt-fl">
-            <div class="sign-l">
+            <div class="sign-l fl">
                 <div class="sign-lp">
                     <div class="slp-hight">
                       <div>
@@ -17,14 +17,61 @@
             </div>
         </div>
         <div class="mt-fr">
-            <div class="sign-r">
-
+            <div class="sign-r fr">
+                <div class="ml-55 sing-content">
+                <div class="signr-top ">
+                    <h2 class="t-1 cor-5">
+                        登 录
+                    </h2>
+                </div>
+                <div class="mt-50">
+                    <div class="sign-tap">
+                        <i class="block sign-mail-icon fl">
+                        </i>
+                        <div class="fl">
+                          <input type="text" placeholder="邮箱" name="username" value="">
+                        </div>
+                    </div>
+                    <div class="sign-tap mt-25">
+                        <i class="block sign-pass-icon fl">
+                        </i>
+                        <div class="fl">
+                            <input type="password" placeholder="密码" name="password" value="">
+                        </div>
+                    </div>
+                    <div class="mt-25">
+                        <label>
+                            <input type="checkbox" name="remeberme" checked value="true"/><span class="fs-13 ml-5 cor-1">记住我</span>
+                        </label>
+                        <a href="" class="cor-4 ml-10 fs-13">
+                            忘记密码?
+                        </a>
+                    </div>
+                    <div class="mt-35">
+                        <a href="" class="w-300 block a-link bg-1 btn btn-1">
+                            登 录
+                        </a>
+                    </div>
+                </div>
+                <div class="signup-text mt-60">
+                    <p class="p-1">
+                        如果还没有账号，可以点这里 <a href="" class="cor-6">立即注册</a>
+                    </p>
+                </div>
+                </div>
             </div>
         </div>
     </div>
 </div>
 <script>
 $(function(){
-    $('.sign-l div.sign-lp').css('padding-top',($("body").height()-442)/2-50+"px");
+    function adjust() {
+        $('.sign-l div.sign-lp').css('padding-top', ($("body").height() - 442) / 2 - 50 + "px");
+        $('.sign-r div.sing-content').css('padding-top', ($("body").height() - 378) / 2 - 50 + "px");
+    }
+    adjust();
+    $(window).resize(function(){
+        adjust();
+    });
 });
 </script>

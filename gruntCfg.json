@@ -1,0 +1,19 @@
+{
+    "requirejs": {
+        "options": {
+            "baseUrl": "<%= config.srcDir %>",
+            "paths": {
+                "$": "jquery/jquery",
+                "_": "underscore/underscore",
+                "text": "text/text"
+            },
+
+                "include": [
+                    "$",
+                    "_"
+                ],
+                "out": "<%= config.destDir %>/libs.js"
+
+        }
+    }
+}
