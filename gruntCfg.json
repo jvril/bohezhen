@@ -3,16 +3,19 @@
         "options": {
             "baseUrl": "<%= config.srcDir %>",
             "paths": {
-                "$": "jquery/jquery",
-                "_": "underscore/underscore",
-                "text": "text/text"
+                "$": "lib/jquery/jquery",
+                "_": "lib/underscore/underscore",
+                "service":"mt/service",
+                "placeholder":"lib/jquery-placeholder/jquery.placeholder"
             },
 
-                "include": [
-                    "$",
-                    "_"
-                ],
-                "out": "<%= config.destDir %>/libs.js"
+            "include": [
+                "$",
+                "_",
+                "service",
+                "placeholder"
+            ],
+            "out": "<%= config.destDir %>/main.js"
 
         }
     }

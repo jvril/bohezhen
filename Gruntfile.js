@@ -60,7 +60,7 @@ module.exports = function(grunt){
         cfg = cfg.requirejs;
 
         grunt.config.set('config', {
-            srcDir: path+'/lib/',
+            srcDir: path+'/',
             destDir: path
         });
 
